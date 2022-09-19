@@ -1,0 +1,156 @@
+/* Colors Primary */
+$red: hsl(0, 78%, 62%);
+$cyan: hsl(180, 62%, 55%);
+$orange: hsl(34, 97%, 64%);
+$blue: hsl(212, 86%, 64%);
+$background-gray: F8F8FA;
+
+/* Colors Neutral */
+$very-dark-blue: hsl(234, 12%, 34%);
+$grayish-blue: hsl(229, 6%, 66%);
+$very-light-gray: hsl(0, 0%, 98%);
+
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/* Body */
+
+body {
+  background-color: $background-gray;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  padding: 5em 2em;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .delivery {
+      margin: 0 0 5em;
+      text-align: center;
+      h1 {
+        color: $very-dark-blue;
+        font-weight: 600;
+        margin: 0 0 0.7em 0;
+      }
+      h2 {
+        color: $very-dark-blue;
+        font-weight: 400;
+      }
+      p {
+        color: $grayish-blue;
+      }
+    }
+    .grid {
+      display: grid;
+      .item {
+        margin: 1em 0;
+        padding: 2em;
+        background-color: white;
+        border-radius: 0.4em;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        // text-align: left;
+
+        h3 {
+          font-weight: 600;
+          color: $very-dark-blue;
+        }
+        p {
+          margin: 0 0 3em;
+          line-height: 1.9em;
+          font-weight: 400;
+          color: $grayish-blue;
+        }
+        .img-wrapper {
+          display: flex;
+          img {
+            margin-left: auto;
+          }
+        }
+      }
+      .supervisor {
+        border-top: 0.3em solid $cyan;
+      }
+      .team-builder {
+        border-top: 0.3em solid $red;
+      }
+      .karma {
+        border-top: 0.3em solid $orange;
+      }
+      .calculator {
+        border-top: 0.3em solid $blue;
+      }
+    }
+  }
+}
+
+/* Media */
+@media (min-width: 375px) {
+  body {
+    .container {
+      .delivery {
+        max-width: 40em;
+      }
+    }
+  }
+
+  @media (min-width: 1312px) {
+    body {
+      width: 100vw;
+      height: 100vh;
+      padding: 5em 10em;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+
+      .container {
+        .delivery {
+          max-width: 100em;
+          margin: 0 20em 5em;
+          h1 {
+            font-size: 2.3em;
+          }
+          h2 {
+            font-size: 2.3em;
+            font-weight: 200;
+          }
+        }
+        .grid {
+          display: grid;
+          grid-template-columns: repeat(6, 1fr);
+          grid-template-rows: repeat(4, 1fr);
+          grid-column-gap: 0px;
+          grid-row-gap: 0px;
+          gap: 2em;
+          .item {
+            margin: 0;
+          }
+          .supervisor {
+            grid-area: 2 / 1 / 4 / 3;
+          }
+          .team-builder {
+            grid-area: 1 / 3 / 3 / 5;
+          }
+
+          .karma {
+            grid-area: 2 / 5 / 4 / 7;
+          }
+          .calculator {
+            grid-area: 3 / 3 / 5 / 5;
+          }
+        }
+      }
+    }
+  }
+}
