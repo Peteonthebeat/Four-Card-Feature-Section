@@ -1,10 +1,5 @@
 # Frontend Mentor - Four card feature section solution
 
-![screenshot](https://user-images.githubusercontent.com/99641829/191074876-989eec7d-8f97-4abc-8599-c684bca1a283.png)
-
-
-
-
 This is a solution to the [Four card feature section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK). 
 ## Table of contents
 
