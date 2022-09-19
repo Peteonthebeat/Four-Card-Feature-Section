@@ -29,7 +29,7 @@ Users should be able to:
 
 
 - Solution URL: [https://github.com/Peteonthebeat/Four-Card-Feature-Section.git]
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://peteonthebeat.github.io/Four-Card-Feature-Section/]
 
 ## My process
 I lay down all the HTML first. Then I style the elements accordingly, and create the media queries. 
